@@ -76,3 +76,6 @@ WHERE {
   FILTER (regex(str(?objective), "Travel", "i"))
 }
 
+## License
+
+The Ontology is developed by Kabul Kurniawan and team and released under the [MIT license](http://opensource.org/licenses/MIT).
