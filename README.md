@@ -1,6 +1,6 @@
-# Agentic Ontology
+# Agentic AI Ontology
 
-This repository contains the **Agentic Ontology (AgentO)**, a formal semantic model for representing agents, their capabilities, interactions, and execution structures (e.g., Agents, tasks, goal  and workflow patterns). The ontology is designed to support research and applications in agentic AI.
+This repository contains the **Agentic AI Ontology (AgentO)**, a formal semantic model for representing agents, their capabilities, interactions, and execution structures (e.g., Agents, tasks, goal  and workflow patterns). The ontology is designed to support research and applications in agentic AI.
 
 ## Ontology Overview
 
