@@ -14,7 +14,11 @@ The model is suitable for integration with knowledge graphs, semantic reasoning 
 
 ## 🧪 Example Use
 
-The following SPARQL `CONSTRUCT` query demonstrates how to extract a structured view of an agentic team working toward a travel-related objective. This includes team members, their goals, tasks, workflow patterns, tools, and resources.
+You can execute queries against the ontology via this public SPARQL endpoint:
+
+👉 SPARQL Endpoint: https://w3id.org/agentic-ai/sparql
+
+The following SPARQL `CONSTRUCT` query demonstrates how to extract a structured view of an agentic team working toward a travel-planning related objective. This includes team members, their goals, tasks, workflow patterns, tools, and resources.
 
 ```sparql
 PREFIX : <http://www.w3id.org/agentic-ai/onto#>
