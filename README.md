@@ -10,6 +10,26 @@ The ontology provides a structured vocabulary to represent:
 - **Workflow**: Sequences or networks of actions or tasks, possibly with control flow (sequential, parallel, conditional).
 - **Tasks & Tools**: Executable components that make up a plan, etc.
 
+## 🔧 Class Definitions
+
+| **Class**           | **Description**                                                                                                                   |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| **Agent**           | An entity capable of perceiving its environment, processing information, and acting to achieve goals.                             |
+| **Capability**      | An ability that can be performed by an agent.                                                                                     |
+| **Constraint**      | A rule or condition derived from the knowledge base that restricts or guides agent behavior or decision-making.                   |
+| **Environment**     | The surroundings or context in which an agent operates.                                                                           |
+| **WorkflowPattern** | A reusable and structured template that defines a sequence or logic of tasks and interactions within an agentic workflow.         |
+| **WorkflowStep**    | An individual action or phase within a workflow pattern that contributes to task execution or goal achievement.                   |
+| **Goal**            | An objective or desired state that an agent aims to achieve.                                                                      |
+| **KnowledgeBase**   | A structured collection of information that an agent can reference.                                                               |
+| **LanguageModel**   | Language Model that is used by an AI Agent.                                                                                       |
+| **Memory**          | A knowledge structure that stores and retrieves past information, experiences, or states to support learning and decision-making. |
+| **Objective**       | A collective objective that a team is assigned to accomplish.                                                                     |
+| **Resource**        | Any asset that can be utilized by an agent to perform tasks.                                                                      |
+| **Task**            | A specific activity that contributes to achieving a goal.                                                                         |
+| **Team**            | A coordinated group of agents organized to pursue a common objective or set of tasks.                                             |
+| **Tool**            | An instrument used by an agent to enhance its capabilities.                                                                       |
+
 
 
 ## Example Use
