@@ -11,3 +11,44 @@ The ontology provides a structured vocabulary to represent:
 - **Tasks & Tools**: Executable components that make up a plan, etc.
 
 The model is suitable for integration with knowledge graphs, semantic reasoning engines, and agent-based modeling tools.
+
+## 🧪 Example Use
+
+The following SPARQL `CONSTRUCT` query demonstrates how to extract a structured view of an agentic team working toward a travel-related objective. This includes team members, their goals, tasks, workflow patterns, tools, and resources.
+
+```sparql
+PREFIX : <http://www.w3id.org/agentic-ai/onto#>
+
+CONSTRUCT {
+  ?team  :hasAgentMember ?agent ;
+         :hasObjective ?objective ;
+         :hasWorkflowPattern ?workflowPattern .
+  ?workflowPattern :hasWorkflowStep ?workflowStep .
+  ?workflowStep  :hasAssociatedTask ?task ;
+                 :performedBy ?agent;
+                 :nextStep ?nextWorkflowStep .
+  ?agent :hasTask ?task ;
+         :hasGoal ?goal ;
+         :usesTool ?tool .
+} 
+WHERE {
+  ?team :hasAgentMember ?agent ; 
+        :hasObjective ?objective ;
+        :hasWorkflowPattern ?workflowPattern .
+  ?agent :hasTask ?task ; 
+         :hasGoal ?goal .
+
+  OPTIONAL {
+    ?workflowPattern :hasWorkflowStep ?workflowStep .
+    ?workflowStep :hasAssociatedTask ?task ;
+                  :performedBy ?agent ; 
+                  :nextStep ?nextWorkflowStep .
+  }
+
+  OPTIONAL { ?agent :usesTool ?tool . }
+  OPTIONAL { ?agent :usesResource ?resource . }
+  OPTIONAL { ?tool :accessesResource ?resource . }
+
+  FILTER (regex(str(?objective), "Travel", "i"))
+}
+
