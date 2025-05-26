@@ -1,0 +1,947 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3id.org/agentic-ai/onto", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "Agentic AI Ontology"
+    },
+    "iri" : "http://www.w3id.org/agentic-ai/onto",
+    "version" : "1.1",
+    "author" : [ "Kabul Kurniawan" ],
+    "description" : {
+      "en" : "An ontology for describing agentic AI systems, their components, interraction and patterns."
+    },
+    "labels" : {
+      "undefined" : "Agentic AI Ontology"
+    },
+    "comments" : {
+      "undefined" : "An ontology for describing agentic AI systems, their components, interraction and patterns."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Kabul Kurniawan",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "agento",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Agentic AI Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#Resource",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resource",
+      "undefined" : "Resource"
+    },
+    "comment" : {
+      "undefined" : "Any asset that can be utilized by an agent to perform tasks."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#Environment",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Environment",
+      "undefined" : "Environment"
+    },
+    "comment" : {
+      "undefined" : "The surroundings or context in which an agent operates."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#Capability",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Capability",
+      "undefined" : "Capability"
+    },
+    "comment" : {
+      "undefined" : "ability that can be performed by agent"
+    },
+    "id" : "9"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#KnowledgeBase",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "KnowledgeBase",
+      "undefined" : "Knowledge Base"
+    },
+    "subClasses" : [ "14", "15" ],
+    "comment" : {
+      "undefined" : "A structured collection of information that an agent can reference."
+    },
+    "id" : "13"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#Tool",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tool",
+      "undefined" : "Tool"
+    },
+    "comment" : {
+      "undefined" : "An instrument used by an agent to enhance its capabilities."
+    },
+    "id" : "16"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#Agent",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent",
+      "undefined" : "Agent"
+    },
+    "comment" : {
+      "undefined" : "An entity capable of perceiving its environment, processing information, and acting to achieve goals."
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#LanguageModel",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LanguageModel",
+      "undefined" : "Language Model"
+    },
+    "comment" : {
+      "undefined" : "Language Model that is used by AI Agent"
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#WorkflowStep",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WorkflowStep",
+      "undefined" : "Workflow Step"
+    },
+    "comment" : {
+      "undefined" : "An individual action or phase within a workflow pattern that contributes to task execution or goal achievement."
+    },
+    "id" : "27"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#Constraint",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Constraint",
+      "undefined" : "Constraint"
+    },
+    "comment" : {
+      "undefined" : "A rule or condition derived from the knowledge base that restricts or guides agent behavior or decision-making."
+    },
+    "id" : "15",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#ExecutionStep",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExecutionStep"
+    },
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#WorkflowPattern",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WorkflowPattern",
+      "undefined" : "Workflow Pattern"
+    },
+    "comment" : {
+      "undefined" : "A reusable and structured template that defines a sequence or logic of tasks and interactions within an agentic workflow."
+    },
+    "id" : "25"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "7",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#Team",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Team",
+      "undefined" : "Team"
+    },
+    "comment" : {
+      "undefined" : "A coordinated group of agents organized to pursue a common objective or set of tasks"
+    },
+    "id" : "20"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#Goal",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Goal",
+      "undefined" : "Goal"
+    },
+    "comment" : {
+      "undefined" : "An objective or desired state that an agent aims to achieve."
+    },
+    "id" : "37"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#Objective",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Objective",
+      "undefined" : "Objective"
+    },
+    "comment" : {
+      "undefined" : "A collective objective that a team is assigned to accomplish."
+    },
+    "id" : "38"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#Task",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Task",
+      "undefined" : "Task"
+    },
+    "comment" : {
+      "undefined" : "A specific activity that contributes to achieving a goal."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#Memory",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Memory",
+      "undefined" : "Memory"
+    },
+    "comment" : {
+      "undefined" : "A knowledge structure that stores and retrieves past information, experiences, or states to support learning and decision-making."
+    },
+    "id" : "14",
+    "superClasses" : [ "13" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#containsResource",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "containsResource",
+      "undefined" : "contains resource"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Relates an Environment into resources."
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#useLanguageModel",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "useLanguageModel",
+      "undefined" : "use language model"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "link Agent to an Language Model"
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://purl.org/dc/terms/reference",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "reference",
+      "undefined" : "reference"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "A reference of resource."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#requiresResource",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "requiresResource",
+      "undefined" : "requires resource"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Relates a task to resources needed for its execution."
+    },
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#operatesIn",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "operatesIn",
+      "undefined" : "operates in"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates an agent to its operational environment."
+    },
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#agentID",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "agentID",
+      "undefined" : "agent ID"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "A unique identifier for an agent."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#hasAgentMember",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasAgentMember",
+      "undefined" : "has agent member"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Links a team to its participating agents."
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#stepOrder",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "stepOrder",
+      "undefined" : "step order"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "An execution Step  Order"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#hasSubPattern",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasSubPattern",
+      "undefined" : "has sub pattern"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "Indicates a sub-pattern that is part of a larger workflow pattern."
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#hasAssociatedTask",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasAssociatedTask",
+      "undefined" : "has associated Task"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Links an execution step to the task it corresponds to."
+    },
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#envType",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "envType"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "A string that describes the type of environment (e.g., virtual, physical)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#performedBy",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "performedBy",
+      "undefined" : "performed By"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "Indicates the agent that performs the execution step."
+    },
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://purl.org/dc/terms/description",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "description",
+      "undefined" : "Description"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "An account of the resource."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "31"
+  }, {
+    "range" : "13",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#nextPattern",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "nextPattern",
+      "undefined" : "next pattern"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "Defines the next workflow pattern in a sequential arrangement."
+    },
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#accessesResource",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "accessesResource",
+      "undefined" : "accesses resource"
+    },
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "Tool accesses a resource on behalf of the agent."
+    },
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#contributesToObjective",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "contributesToObjective",
+      "undefined" : "contributes To Objective"
+    },
+    "domain" : "37",
+    "comment" : {
+      "undefined" : "goal contributes to objective"
+    },
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#hasCapability",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasCapability",
+      "undefined" : "has capability"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Capability that can berforme by agent"
+    },
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#interactsWith",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "interactsWith",
+      "undefined" : "interacts with"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates an agent to other agents it interacts with."
+    },
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#hasWorkflowPattern",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasWorkflowPattern",
+      "undefined" : "has workflow pattern"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Relates a team to the workflow pattern it follows."
+    },
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "range" : "13",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#usesTool",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "usesTool",
+      "undefined" : "uses tool"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Agent uses a tool to perform tasks or access resources."
+    },
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#usesResource",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "usesResource",
+      "undefined" : "uses resource"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Agent directly uses or consumes a resource."
+    },
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#hasKnowledge",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasKnowledge",
+      "undefined" : "has knowledge base"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates an agent to its knowledge base."
+    },
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#hasObjective",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasObjective",
+      "undefined" : "has objective"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Objective of team need to accomplish"
+    },
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#hasGoal",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasGoal",
+      "undefined" : "has goal"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates an agent to its objectives."
+    },
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#hasWorkflowStep",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasWorkflowStep",
+      "undefined" : "has workflow step"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "Specifies a step that is part of a workflow pattern."
+    },
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#taskExpectedOutput",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "taskExpectedOutput",
+      "undefined" : "task expected output"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "The expected output of a task."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#agentRole",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "agentRole",
+      "undefined" : "agent role"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The role of an agent."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#contributesToGoal",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "contributesToGoal",
+      "undefined" : "contributes to goal"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Relates a task to the goal it helps achieve."
+    },
+    "attributes" : [ "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#hasTask",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasTask",
+      "undefined" : "has task"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates an agent to tasks."
+    },
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#requiresCapability",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "requiresCapability",
+      "undefined" : "requires capability"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "capability needed for a task ."
+    },
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://purl.org/dc/terms/title",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "title",
+      "undefined" : "Title"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "A name given to the resource."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.w3id.org/agentic-ai/onto#nextStep",
+    "baseIri" : "http://www.w3id.org/agentic-ai/onto",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "nextStep",
+      "undefined" : "next step"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "Defines the next step in the workflow sequence."
+    },
+    "attributes" : [ "object" ],
+    "id" : "58"
+  } ]
+}

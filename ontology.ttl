@@ -1,0 +1,403 @@
+@prefix : <http://www.w3id.org/agentic-ai/onto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3id.org/agentic-ai/onto> .
+
+<http://www.w3id.org/agentic-ai/onto> rdf:type owl:Ontology ;
+                                       <http://purl.org/dc/elements/1.1/creator> "Kabul Kurniawan" ;
+                                       <http://purl.org/dc/elements/1.1/description> "An ontology for describing agentic AI systems, their components, interraction and patterns."@en ;
+                                       <http://purl.org/dc/elements/1.1/rights> "http://creativecommons.org/licenses/by/4.0/" ;
+                                       <http://purl.org/dc/elements/1.1/title> "Agentic AI Ontology" ;
+                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "agento" ;
+                                       rdfs:comment "An ontology for describing agentic AI systems, their components, interraction and patterns." ;
+                                       rdfs:label "Agentic AI Ontology" ;
+                                       owl:versionInfo "1.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3id.org/agentic-ai/onto#accessesResource
+:accessesResource rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Tool ;
+                  rdfs:range :Resource ;
+                  rdfs:comment "Tool accesses a resource on behalf of the agent." ;
+                  rdfs:label "accesses resource" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#containsResource
+:containsResource rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Environment ;
+                  rdfs:range :Resource ;
+                  rdfs:comment "Relates an Environment into resources." ;
+                  rdfs:label "contains resource" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#contributesToGoal
+:contributesToGoal rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Task ;
+                   rdfs:range :Goal ;
+                   rdfs:comment "Relates a task to the goal it helps achieve." ;
+                   rdfs:label "contributes to goal" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#contributesToObjective
+:contributesToObjective rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Goal ;
+                        rdfs:range :Objective ;
+                        rdfs:comment "goal contributes to objective" ;
+                        rdfs:label "contributes To Objective" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#hasAgentMember
+:hasAgentMember rdf:type owl:ObjectProperty ;
+                rdfs:domain :Team ;
+                rdfs:range :Agent ;
+                rdfs:comment "Links a team to its participating agents." ;
+                rdfs:label "has agent member" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#hasAssociatedTask
+:hasAssociatedTask rdf:type owl:ObjectProperty ;
+                   rdfs:domain :ExecutionStep ;
+                   rdfs:range :Task ;
+                   rdfs:comment "Links an execution step to the task it corresponds to." ;
+                   rdfs:label "has associated Task" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#hasCapability
+:hasCapability rdf:type owl:ObjectProperty ;
+               rdfs:domain :Agent ;
+               rdfs:range :Capability ;
+               rdfs:comment "Capability that can berforme by agent" ;
+               rdfs:label "has capability" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#hasGoal
+:hasGoal rdf:type owl:ObjectProperty ;
+         rdfs:domain :Agent ;
+         rdfs:range :Goal ;
+         rdfs:comment "Relates an agent to its objectives." ;
+         rdfs:label "has goal" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#hasKnowledge
+:hasKnowledge rdf:type owl:ObjectProperty ;
+              rdfs:domain :Agent ;
+              rdfs:range :KnowledgeBase ;
+              rdfs:comment "Relates an agent to its knowledge base." ;
+              rdfs:label "has knowledge base" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#hasObjective
+:hasObjective rdf:type owl:ObjectProperty ;
+              rdfs:domain :Team ;
+              rdfs:range :Objective ;
+              rdfs:comment "Objective of team need to accomplish" ;
+              rdfs:label "has objective" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#hasSubPattern
+:hasSubPattern rdf:type owl:ObjectProperty ;
+               rdfs:domain :WorkflowPattern ;
+               rdfs:range :WorkflowPattern ;
+               rdfs:comment "Indicates a sub-pattern that is part of a larger workflow pattern." ;
+               rdfs:label "has sub pattern" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#hasTask
+:hasTask rdf:type owl:ObjectProperty ;
+         rdfs:domain :Agent ;
+         rdfs:range :Task ;
+         rdfs:comment "Relates an agent to tasks." ;
+         rdfs:label "has task" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#hasWorkflowPattern
+:hasWorkflowPattern rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Team ;
+                    rdfs:range :WorkflowPattern ;
+                    rdfs:comment "Relates a team to the workflow pattern it follows." ;
+                    rdfs:label "has workflow pattern" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#hasWorkflowStep
+:hasWorkflowStep rdf:type owl:ObjectProperty ;
+                 rdfs:domain :WorkflowPattern ;
+                 rdfs:range :WorkflowStep ;
+                 rdfs:comment "Specifies a step that is part of a workflow pattern." ;
+                 rdfs:label "has workflow step" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#interactsWith
+:interactsWith rdf:type owl:ObjectProperty ;
+               rdfs:domain :Agent ;
+               rdfs:range :Agent ;
+               rdfs:comment "Relates an agent to other agents it interacts with." ;
+               rdfs:label "interacts with" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#nextPattern
+:nextPattern rdf:type owl:ObjectProperty ;
+             rdfs:domain :WorkflowPattern ;
+             rdfs:range :WorkflowPattern ;
+             rdfs:comment "Defines the next workflow pattern in a sequential arrangement." ;
+             rdfs:label "next pattern" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#nextStep
+:nextStep rdf:type owl:ObjectProperty ;
+          rdfs:domain :WorkflowStep ;
+          rdfs:range :WorkflowStep ;
+          rdfs:comment "Defines the next step in the workflow sequence." ;
+          rdfs:label "next step" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#operatesIn
+:operatesIn rdf:type owl:ObjectProperty ;
+            rdfs:domain :Agent ;
+            rdfs:range :Environment ;
+            rdfs:comment "Relates an agent to its operational environment." ;
+            rdfs:label "operates in" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#performedBy
+:performedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :WorkflowStep ;
+             rdfs:range :Agent ;
+             rdfs:comment "Indicates the agent that performs the execution step." ;
+             rdfs:label "performed By" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#requiresCapability
+:requiresCapability rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Task ;
+                    rdfs:range :Capability ;
+                    rdfs:comment "capability needed for a task ." ;
+                    rdfs:label "requires capability" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#requiresResource
+:requiresResource rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Task ;
+                  rdfs:range :Resource ;
+                  rdfs:comment "Relates a task to resources needed for its execution." ;
+                  rdfs:label "requires resource" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#useLanguageModel
+:useLanguageModel rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Agent ;
+                  rdfs:range :LanguageModel ;
+                  rdfs:comment "link Agent to an Language Model" ;
+                  rdfs:label "use language model" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#usesResource
+:usesResource rdf:type owl:ObjectProperty ;
+              rdfs:domain :Agent ;
+              rdfs:range :Resource ;
+              rdfs:comment "Agent directly uses or consumes a resource." ;
+              rdfs:label "uses resource" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#usesTool
+:usesTool rdf:type owl:ObjectProperty ;
+          rdfs:domain :Agent ;
+          rdfs:range :Tool ;
+          rdfs:comment "Agent uses a tool to perform tasks or access resources." ;
+          rdfs:label "uses tool" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:DatatypeProperty ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "An account of the resource." ;
+                                       rdfs:label "Description" .
+
+
+###  http://purl.org/dc/terms/reference
+<http://purl.org/dc/terms/reference> rdf:type owl:DatatypeProperty ;
+                                     rdfs:range xsd:string ;
+                                     rdfs:comment "A reference of resource." ;
+                                     rdfs:label "reference" .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:DatatypeProperty ;
+                                 rdfs:range xsd:string ;
+                                 rdfs:comment "A name given to the resource." ;
+                                 rdfs:label "Title" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#agentID
+:agentID rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Agent ;
+         rdfs:range xsd:string ;
+         rdfs:comment "A unique identifier for an agent." ;
+         rdfs:label "agent ID" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#agentRole
+:agentRole rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Agent ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The role of an agent." ;
+           rdfs:label "agent role" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#envType
+:envType rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Environment ;
+         rdfs:range xsd:string ;
+         rdfs:comment "A string that describes the type of environment (e.g., virtual, physical)." .
+
+
+###  http://www.w3id.org/agentic-ai/onto#stepOrder
+:stepOrder rdf:type owl:DatatypeProperty ;
+           rdfs:domain :ExecutionStep ;
+           rdfs:range xsd:integer ;
+           rdfs:comment "An execution Step  Order" ;
+           rdfs:label "step order" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#taskExpectedOutput
+:taskExpectedOutput rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Task ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "The expected output of a task." ;
+                    rdfs:label "task expected output" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3id.org/agentic-ai/onto#Agent
+:Agent rdf:type owl:Class ;
+       rdfs:comment "An entity capable of perceiving its environment, processing information, and acting to achieve goals." ;
+       rdfs:label "Agent" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#Capability
+:Capability rdf:type owl:Class ;
+            rdfs:comment "ability that can be performed by agent" ;
+            rdfs:label "Capability" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#Constraint
+:Constraint rdf:type owl:Class ;
+            rdfs:subClassOf :KnowledgeBase ;
+            rdfs:comment "A rule or condition derived from the knowledge base that restricts or guides agent behavior or decision-making." ;
+            rdfs:label "Constraint" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#Environment
+:Environment rdf:type owl:Class ;
+             rdfs:comment "The surroundings or context in which an agent operates." ;
+             rdfs:label "Environment" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#ExecutionStep
+:ExecutionStep rdf:type owl:Class .
+
+
+###  http://www.w3id.org/agentic-ai/onto#Goal
+:Goal rdf:type owl:Class ;
+      rdfs:comment "An objective or desired state that an agent aims to achieve." ;
+      rdfs:label "Goal" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#KnowledgeBase
+:KnowledgeBase rdf:type owl:Class ;
+               rdfs:comment "A structured collection of information that an agent can reference." ;
+               rdfs:label "Knowledge Base" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#LanguageModel
+:LanguageModel rdf:type owl:Class ;
+               rdfs:comment "Language Model that is used by AI Agent" ;
+               rdfs:label "Language Model" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#Memory
+:Memory rdf:type owl:Class ;
+        rdfs:subClassOf :KnowledgeBase ;
+        rdfs:comment "A knowledge structure that stores and retrieves past information, experiences, or states to support learning and decision-making." ;
+        rdfs:label "Memory" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#Objective
+:Objective rdf:type owl:Class ;
+           rdfs:comment "A collective objective that a team is assigned to accomplish." ;
+           rdfs:label "Objective" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#Resource
+:Resource rdf:type owl:Class ;
+          rdfs:comment "Any asset that can be utilized by an agent to perform tasks." ;
+          rdfs:label "Resource" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#Task
+:Task rdf:type owl:Class ;
+      rdfs:comment "A specific activity that contributes to achieving a goal." ;
+      rdfs:label "Task" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#Team
+:Team rdf:type owl:Class ;
+      rdfs:comment "A coordinated group of agents organized to pursue a common objective or set of tasks" ;
+      rdfs:label "Team" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#Tool
+:Tool rdf:type owl:Class ;
+      rdfs:comment "An instrument used by an agent to enhance its capabilities." ;
+      rdfs:label "Tool" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#WorkflowPattern
+:WorkflowPattern rdf:type owl:Class ;
+                 rdfs:comment "A reusable and structured template that defines a sequence or logic of tasks and interactions within an agentic workflow." ;
+                 rdfs:label "Workflow Pattern" .
+
+
+###  http://www.w3id.org/agentic-ai/onto#WorkflowStep
+:WorkflowStep rdf:type owl:Class ;
+              rdfs:comment "An individual action or phase within a workflow pattern that contributes to task execution or goal achievement." ;
+              rdfs:label "Workflow Step" .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

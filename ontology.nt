@@ -1,0 +1,361 @@
+<http://www.w3id.org/agentic-ai/onto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3id.org/agentic-ai/onto> <http://purl.org/dc/elements/1.1/creator> "Kabul Kurniawan" .
+<http://www.w3id.org/agentic-ai/onto> <http://purl.org/dc/elements/1.1/description> "An ontology for describing agentic AI systems, their components, interraction and patterns."@en .
+<http://www.w3id.org/agentic-ai/onto> <http://purl.org/dc/elements/1.1/rights> "http://creativecommons.org/licenses/by/4.0/" .
+<http://www.w3id.org/agentic-ai/onto> <http://purl.org/dc/elements/1.1/title> "Agentic AI Ontology" .
+<http://www.w3id.org/agentic-ai/onto> <http://purl.org/vocab/vann/preferredNamespacePrefix> "agento" .
+<http://www.w3id.org/agentic-ai/onto> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology for describing agentic AI systems, their components, interraction and patterns." .
+<http://www.w3id.org/agentic-ai/onto> <http://www.w3.org/2000/01/rdf-schema#label> "Agentic AI Ontology" .
+<http://www.w3id.org/agentic-ai/onto> <http://www.w3.org/2002/07/owl#versionInfo> "1.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/agentic-ai/onto#accessesResource
+<http://www.w3id.org/agentic-ai/onto#accessesResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#accessesResource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Tool> .
+<http://www.w3id.org/agentic-ai/onto#accessesResource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#Resource> .
+<http://www.w3id.org/agentic-ai/onto#accessesResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Tool accesses a resource on behalf of the agent." .
+<http://www.w3id.org/agentic-ai/onto#accessesResource> <http://www.w3.org/2000/01/rdf-schema#label> "accesses resource" .
+# 
+# http://www.w3id.org/agentic-ai/onto#containsResource
+<http://www.w3id.org/agentic-ai/onto#containsResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#containsResource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Environment> .
+<http://www.w3id.org/agentic-ai/onto#containsResource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#Resource> .
+<http://www.w3id.org/agentic-ai/onto#containsResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an Environment into resources." .
+<http://www.w3id.org/agentic-ai/onto#containsResource> <http://www.w3.org/2000/01/rdf-schema#label> "contains resource" .
+# 
+# http://www.w3id.org/agentic-ai/onto#contributesToGoal
+<http://www.w3id.org/agentic-ai/onto#contributesToGoal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#contributesToGoal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Task> .
+<http://www.w3id.org/agentic-ai/onto#contributesToGoal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#Goal> .
+<http://www.w3id.org/agentic-ai/onto#contributesToGoal> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a task to the goal it helps achieve." .
+<http://www.w3id.org/agentic-ai/onto#contributesToGoal> <http://www.w3.org/2000/01/rdf-schema#label> "contributes to goal" .
+# 
+# http://www.w3id.org/agentic-ai/onto#contributesToObjective
+<http://www.w3id.org/agentic-ai/onto#contributesToObjective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#contributesToObjective> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Goal> .
+<http://www.w3id.org/agentic-ai/onto#contributesToObjective> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#Objective> .
+<http://www.w3id.org/agentic-ai/onto#contributesToObjective> <http://www.w3.org/2000/01/rdf-schema#comment> "goal contributes to objective" .
+<http://www.w3id.org/agentic-ai/onto#contributesToObjective> <http://www.w3.org/2000/01/rdf-schema#label> "contributes To Objective" .
+# 
+# http://www.w3id.org/agentic-ai/onto#hasAgentMember
+<http://www.w3id.org/agentic-ai/onto#hasAgentMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#hasAgentMember> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Team> .
+<http://www.w3id.org/agentic-ai/onto#hasAgentMember> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#Agent> .
+<http://www.w3id.org/agentic-ai/onto#hasAgentMember> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a team to its participating agents." .
+<http://www.w3id.org/agentic-ai/onto#hasAgentMember> <http://www.w3.org/2000/01/rdf-schema#label> "has agent member" .
+# 
+# http://www.w3id.org/agentic-ai/onto#hasAssociatedTask
+<http://www.w3id.org/agentic-ai/onto#hasAssociatedTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#hasAssociatedTask> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#ExecutionStep> .
+<http://www.w3id.org/agentic-ai/onto#ExecutionStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/agentic-ai/onto#hasAssociatedTask> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#Task> .
+<http://www.w3id.org/agentic-ai/onto#hasAssociatedTask> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an execution step to the task it corresponds to." .
+<http://www.w3id.org/agentic-ai/onto#hasAssociatedTask> <http://www.w3.org/2000/01/rdf-schema#label> "has associated Task" .
+# 
+# http://www.w3id.org/agentic-ai/onto#hasCapability
+<http://www.w3id.org/agentic-ai/onto#hasCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#hasCapability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Agent> .
+<http://www.w3id.org/agentic-ai/onto#hasCapability> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#Capability> .
+<http://www.w3id.org/agentic-ai/onto#hasCapability> <http://www.w3.org/2000/01/rdf-schema#comment> "Capability that can berforme by agent" .
+<http://www.w3id.org/agentic-ai/onto#hasCapability> <http://www.w3.org/2000/01/rdf-schema#label> "has capability" .
+# 
+# http://www.w3id.org/agentic-ai/onto#hasGoal
+<http://www.w3id.org/agentic-ai/onto#hasGoal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#hasGoal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Agent> .
+<http://www.w3id.org/agentic-ai/onto#hasGoal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#Goal> .
+<http://www.w3id.org/agentic-ai/onto#hasGoal> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an agent to its objectives." .
+<http://www.w3id.org/agentic-ai/onto#hasGoal> <http://www.w3.org/2000/01/rdf-schema#label> "has goal" .
+# 
+# http://www.w3id.org/agentic-ai/onto#hasKnowledge
+<http://www.w3id.org/agentic-ai/onto#hasKnowledge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#hasKnowledge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Agent> .
+<http://www.w3id.org/agentic-ai/onto#hasKnowledge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#KnowledgeBase> .
+<http://www.w3id.org/agentic-ai/onto#hasKnowledge> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an agent to its knowledge base." .
+<http://www.w3id.org/agentic-ai/onto#hasKnowledge> <http://www.w3.org/2000/01/rdf-schema#label> "has knowledge base" .
+# 
+# http://www.w3id.org/agentic-ai/onto#hasObjective
+<http://www.w3id.org/agentic-ai/onto#hasObjective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#hasObjective> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Team> .
+<http://www.w3id.org/agentic-ai/onto#hasObjective> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#Objective> .
+<http://www.w3id.org/agentic-ai/onto#hasObjective> <http://www.w3.org/2000/01/rdf-schema#comment> "Objective of team need to accomplish" .
+<http://www.w3id.org/agentic-ai/onto#hasObjective> <http://www.w3.org/2000/01/rdf-schema#label> "has objective" .
+# 
+# http://www.w3id.org/agentic-ai/onto#hasSubPattern
+<http://www.w3id.org/agentic-ai/onto#hasSubPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#hasSubPattern> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#WorkflowPattern> .
+<http://www.w3id.org/agentic-ai/onto#hasSubPattern> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#WorkflowPattern> .
+<http://www.w3id.org/agentic-ai/onto#hasSubPattern> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a sub-pattern that is part of a larger workflow pattern." .
+<http://www.w3id.org/agentic-ai/onto#hasSubPattern> <http://www.w3.org/2000/01/rdf-schema#label> "has sub pattern" .
+# 
+# http://www.w3id.org/agentic-ai/onto#hasTask
+<http://www.w3id.org/agentic-ai/onto#hasTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#hasTask> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Agent> .
+<http://www.w3id.org/agentic-ai/onto#hasTask> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#Task> .
+<http://www.w3id.org/agentic-ai/onto#hasTask> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an agent to tasks." .
+<http://www.w3id.org/agentic-ai/onto#hasTask> <http://www.w3.org/2000/01/rdf-schema#label> "has task" .
+# 
+# http://www.w3id.org/agentic-ai/onto#hasWorkflowPattern
+<http://www.w3id.org/agentic-ai/onto#hasWorkflowPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#hasWorkflowPattern> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Team> .
+<http://www.w3id.org/agentic-ai/onto#hasWorkflowPattern> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#WorkflowPattern> .
+<http://www.w3id.org/agentic-ai/onto#hasWorkflowPattern> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a team to the workflow pattern it follows." .
+<http://www.w3id.org/agentic-ai/onto#hasWorkflowPattern> <http://www.w3.org/2000/01/rdf-schema#label> "has workflow pattern" .
+# 
+# http://www.w3id.org/agentic-ai/onto#hasWorkflowStep
+<http://www.w3id.org/agentic-ai/onto#hasWorkflowStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#hasWorkflowStep> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#WorkflowPattern> .
+<http://www.w3id.org/agentic-ai/onto#hasWorkflowStep> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#WorkflowStep> .
+<http://www.w3id.org/agentic-ai/onto#hasWorkflowStep> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies a step that is part of a workflow pattern." .
+<http://www.w3id.org/agentic-ai/onto#hasWorkflowStep> <http://www.w3.org/2000/01/rdf-schema#label> "has workflow step" .
+# 
+# http://www.w3id.org/agentic-ai/onto#interactsWith
+<http://www.w3id.org/agentic-ai/onto#interactsWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#interactsWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Agent> .
+<http://www.w3id.org/agentic-ai/onto#interactsWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#Agent> .
+<http://www.w3id.org/agentic-ai/onto#interactsWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an agent to other agents it interacts with." .
+<http://www.w3id.org/agentic-ai/onto#interactsWith> <http://www.w3.org/2000/01/rdf-schema#label> "interacts with" .
+# 
+# http://www.w3id.org/agentic-ai/onto#nextPattern
+<http://www.w3id.org/agentic-ai/onto#nextPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#nextPattern> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#WorkflowPattern> .
+<http://www.w3id.org/agentic-ai/onto#nextPattern> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#WorkflowPattern> .
+<http://www.w3id.org/agentic-ai/onto#nextPattern> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the next workflow pattern in a sequential arrangement." .
+<http://www.w3id.org/agentic-ai/onto#nextPattern> <http://www.w3.org/2000/01/rdf-schema#label> "next pattern" .
+# 
+# http://www.w3id.org/agentic-ai/onto#nextStep
+<http://www.w3id.org/agentic-ai/onto#nextStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#nextStep> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#WorkflowStep> .
+<http://www.w3id.org/agentic-ai/onto#nextStep> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#WorkflowStep> .
+<http://www.w3id.org/agentic-ai/onto#nextStep> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the next step in the workflow sequence." .
+<http://www.w3id.org/agentic-ai/onto#nextStep> <http://www.w3.org/2000/01/rdf-schema#label> "next step" .
+# 
+# http://www.w3id.org/agentic-ai/onto#operatesIn
+<http://www.w3id.org/agentic-ai/onto#operatesIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#operatesIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Agent> .
+<http://www.w3id.org/agentic-ai/onto#operatesIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#Environment> .
+<http://www.w3id.org/agentic-ai/onto#operatesIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an agent to its operational environment." .
+<http://www.w3id.org/agentic-ai/onto#operatesIn> <http://www.w3.org/2000/01/rdf-schema#label> "operates in" .
+# 
+# http://www.w3id.org/agentic-ai/onto#performedBy
+<http://www.w3id.org/agentic-ai/onto#performedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#performedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#WorkflowStep> .
+<http://www.w3id.org/agentic-ai/onto#performedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#Agent> .
+<http://www.w3id.org/agentic-ai/onto#performedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the agent that performs the execution step." .
+<http://www.w3id.org/agentic-ai/onto#performedBy> <http://www.w3.org/2000/01/rdf-schema#label> "performed By" .
+# 
+# http://www.w3id.org/agentic-ai/onto#requiresCapability
+<http://www.w3id.org/agentic-ai/onto#requiresCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#requiresCapability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Task> .
+<http://www.w3id.org/agentic-ai/onto#requiresCapability> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#Capability> .
+<http://www.w3id.org/agentic-ai/onto#requiresCapability> <http://www.w3.org/2000/01/rdf-schema#comment> "capability needed for a task ." .
+<http://www.w3id.org/agentic-ai/onto#requiresCapability> <http://www.w3.org/2000/01/rdf-schema#label> "requires capability" .
+# 
+# http://www.w3id.org/agentic-ai/onto#requiresResource
+<http://www.w3id.org/agentic-ai/onto#requiresResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#requiresResource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Task> .
+<http://www.w3id.org/agentic-ai/onto#requiresResource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#Resource> .
+<http://www.w3id.org/agentic-ai/onto#requiresResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a task to resources needed for its execution." .
+<http://www.w3id.org/agentic-ai/onto#requiresResource> <http://www.w3.org/2000/01/rdf-schema#label> "requires resource" .
+# 
+# http://www.w3id.org/agentic-ai/onto#useLanguageModel
+<http://www.w3id.org/agentic-ai/onto#useLanguageModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#useLanguageModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Agent> .
+<http://www.w3id.org/agentic-ai/onto#useLanguageModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#LanguageModel> .
+<http://www.w3id.org/agentic-ai/onto#useLanguageModel> <http://www.w3.org/2000/01/rdf-schema#comment> "link Agent to an Language Model" .
+<http://www.w3id.org/agentic-ai/onto#useLanguageModel> <http://www.w3.org/2000/01/rdf-schema#label> "use language model" .
+# 
+# http://www.w3id.org/agentic-ai/onto#usesResource
+<http://www.w3id.org/agentic-ai/onto#usesResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#usesResource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Agent> .
+<http://www.w3id.org/agentic-ai/onto#usesResource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#Resource> .
+<http://www.w3id.org/agentic-ai/onto#usesResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Agent directly uses or consumes a resource." .
+<http://www.w3id.org/agentic-ai/onto#usesResource> <http://www.w3.org/2000/01/rdf-schema#label> "uses resource" .
+# 
+# http://www.w3id.org/agentic-ai/onto#usesTool
+<http://www.w3id.org/agentic-ai/onto#usesTool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/agentic-ai/onto#usesTool> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Agent> .
+<http://www.w3id.org/agentic-ai/onto#usesTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/agentic-ai/onto#Tool> .
+<http://www.w3id.org/agentic-ai/onto#usesTool> <http://www.w3.org/2000/01/rdf-schema#comment> "Agent uses a tool to perform tasks or access resources." .
+<http://www.w3id.org/agentic-ai/onto#usesTool> <http://www.w3.org/2000/01/rdf-schema#label> "uses tool" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#comment> "An account of the resource." .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "Description" .
+# 
+# http://purl.org/dc/terms/reference
+<http://purl.org/dc/terms/reference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/reference> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/reference> <http://www.w3.org/2000/01/rdf-schema#comment> "A reference of resource." .
+<http://purl.org/dc/terms/reference> <http://www.w3.org/2000/01/rdf-schema#label> "reference" .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#comment> "A name given to the resource." .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "Title" .
+# 
+# http://www.w3id.org/agentic-ai/onto#agentID
+<http://www.w3id.org/agentic-ai/onto#agentID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/agentic-ai/onto#agentID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Agent> .
+<http://www.w3id.org/agentic-ai/onto#agentID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3id.org/agentic-ai/onto#agentID> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifier for an agent." .
+<http://www.w3id.org/agentic-ai/onto#agentID> <http://www.w3.org/2000/01/rdf-schema#label> "agent ID" .
+# 
+# http://www.w3id.org/agentic-ai/onto#agentRole
+<http://www.w3id.org/agentic-ai/onto#agentRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/agentic-ai/onto#agentRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Agent> .
+<http://www.w3id.org/agentic-ai/onto#agentRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3id.org/agentic-ai/onto#agentRole> <http://www.w3.org/2000/01/rdf-schema#comment> "The role of an agent." .
+<http://www.w3id.org/agentic-ai/onto#agentRole> <http://www.w3.org/2000/01/rdf-schema#label> "agent role" .
+# 
+# http://www.w3id.org/agentic-ai/onto#envType
+<http://www.w3id.org/agentic-ai/onto#envType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/agentic-ai/onto#envType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Environment> .
+<http://www.w3id.org/agentic-ai/onto#envType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3id.org/agentic-ai/onto#envType> <http://www.w3.org/2000/01/rdf-schema#comment> "A string that describes the type of environment (e.g., virtual, physical)." .
+# 
+# http://www.w3id.org/agentic-ai/onto#stepOrder
+<http://www.w3id.org/agentic-ai/onto#stepOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/agentic-ai/onto#stepOrder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#ExecutionStep> .
+<http://www.w3id.org/agentic-ai/onto#stepOrder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.w3id.org/agentic-ai/onto#stepOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "An execution Step  Order" .
+<http://www.w3id.org/agentic-ai/onto#stepOrder> <http://www.w3.org/2000/01/rdf-schema#label> "step order" .
+# 
+# http://www.w3id.org/agentic-ai/onto#taskExpectedOutput
+<http://www.w3id.org/agentic-ai/onto#taskExpectedOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/agentic-ai/onto#taskExpectedOutput> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/agentic-ai/onto#Task> .
+<http://www.w3id.org/agentic-ai/onto#taskExpectedOutput> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3id.org/agentic-ai/onto#taskExpectedOutput> <http://www.w3.org/2000/01/rdf-schema#comment> "The expected output of a task." .
+<http://www.w3id.org/agentic-ai/onto#taskExpectedOutput> <http://www.w3.org/2000/01/rdf-schema#label> "task expected output" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/agentic-ai/onto#Agent
+<http://www.w3id.org/agentic-ai/onto#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/agentic-ai/onto#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity capable of perceiving its environment, processing information, and acting to achieve goals." .
+<http://www.w3id.org/agentic-ai/onto#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
+# 
+# http://www.w3id.org/agentic-ai/onto#Capability
+<http://www.w3id.org/agentic-ai/onto#Capability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/agentic-ai/onto#Capability> <http://www.w3.org/2000/01/rdf-schema#comment> "ability that can be performed by agent" .
+<http://www.w3id.org/agentic-ai/onto#Capability> <http://www.w3.org/2000/01/rdf-schema#label> "Capability" .
+# 
+# http://www.w3id.org/agentic-ai/onto#Constraint
+<http://www.w3id.org/agentic-ai/onto#Constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/agentic-ai/onto#Constraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/agentic-ai/onto#KnowledgeBase> .
+<http://www.w3id.org/agentic-ai/onto#Constraint> <http://www.w3.org/2000/01/rdf-schema#comment> "A rule or condition derived from the knowledge base that restricts or guides agent behavior or decision-making." .
+<http://www.w3id.org/agentic-ai/onto#Constraint> <http://www.w3.org/2000/01/rdf-schema#label> "Constraint" .
+# 
+# http://www.w3id.org/agentic-ai/onto#Environment
+<http://www.w3id.org/agentic-ai/onto#Environment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/agentic-ai/onto#Environment> <http://www.w3.org/2000/01/rdf-schema#comment> "The surroundings or context in which an agent operates." .
+<http://www.w3id.org/agentic-ai/onto#Environment> <http://www.w3.org/2000/01/rdf-schema#label> "Environment" .
+# 
+# http://www.w3id.org/agentic-ai/onto#ExecutionStep
+# 
+# http://www.w3id.org/agentic-ai/onto#Goal
+<http://www.w3id.org/agentic-ai/onto#Goal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/agentic-ai/onto#Goal> <http://www.w3.org/2000/01/rdf-schema#comment> "An objective or desired state that an agent aims to achieve." .
+<http://www.w3id.org/agentic-ai/onto#Goal> <http://www.w3.org/2000/01/rdf-schema#label> "Goal" .
+# 
+# http://www.w3id.org/agentic-ai/onto#KnowledgeBase
+<http://www.w3id.org/agentic-ai/onto#KnowledgeBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/agentic-ai/onto#KnowledgeBase> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured collection of information that an agent can reference." .
+<http://www.w3id.org/agentic-ai/onto#KnowledgeBase> <http://www.w3.org/2000/01/rdf-schema#label> "Knowledge Base" .
+# 
+# http://www.w3id.org/agentic-ai/onto#LanguageModel
+<http://www.w3id.org/agentic-ai/onto#LanguageModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/agentic-ai/onto#LanguageModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Language Model that is used by AI Agent" .
+<http://www.w3id.org/agentic-ai/onto#LanguageModel> <http://www.w3.org/2000/01/rdf-schema#label> "Language Model" .
+# 
+# http://www.w3id.org/agentic-ai/onto#Memory
+<http://www.w3id.org/agentic-ai/onto#Memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/agentic-ai/onto#Memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/agentic-ai/onto#KnowledgeBase> .
+<http://www.w3id.org/agentic-ai/onto#Memory> <http://www.w3.org/2000/01/rdf-schema#comment> "A knowledge structure that stores and retrieves past information, experiences, or states to support learning and decision-making." .
+<http://www.w3id.org/agentic-ai/onto#Memory> <http://www.w3.org/2000/01/rdf-schema#label> "Memory" .
+# 
+# http://www.w3id.org/agentic-ai/onto#Objective
+<http://www.w3id.org/agentic-ai/onto#Objective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/agentic-ai/onto#Objective> <http://www.w3.org/2000/01/rdf-schema#comment> "A collective objective that a team is assigned to accomplish." .
+<http://www.w3id.org/agentic-ai/onto#Objective> <http://www.w3.org/2000/01/rdf-schema#label> "Objective" .
+# 
+# http://www.w3id.org/agentic-ai/onto#Resource
+<http://www.w3id.org/agentic-ai/onto#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/agentic-ai/onto#Resource> <http://www.w3.org/2000/01/rdf-schema#comment> "Any asset that can be utilized by an agent to perform tasks." .
+<http://www.w3id.org/agentic-ai/onto#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource" .
+# 
+# http://www.w3id.org/agentic-ai/onto#Task
+<http://www.w3id.org/agentic-ai/onto#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/agentic-ai/onto#Task> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific activity that contributes to achieving a goal." .
+<http://www.w3id.org/agentic-ai/onto#Task> <http://www.w3.org/2000/01/rdf-schema#label> "Task" .
+# 
+# http://www.w3id.org/agentic-ai/onto#Team
+<http://www.w3id.org/agentic-ai/onto#Team> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/agentic-ai/onto#Team> <http://www.w3.org/2000/01/rdf-schema#comment> "A coordinated group of agents organized to pursue a common objective or set of tasks" .
+<http://www.w3id.org/agentic-ai/onto#Team> <http://www.w3.org/2000/01/rdf-schema#label> "Team" .
+# 
+# http://www.w3id.org/agentic-ai/onto#Tool
+<http://www.w3id.org/agentic-ai/onto#Tool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/agentic-ai/onto#Tool> <http://www.w3.org/2000/01/rdf-schema#comment> "An instrument used by an agent to enhance its capabilities." .
+<http://www.w3id.org/agentic-ai/onto#Tool> <http://www.w3.org/2000/01/rdf-schema#label> "Tool" .
+# 
+# http://www.w3id.org/agentic-ai/onto#WorkflowPattern
+<http://www.w3id.org/agentic-ai/onto#WorkflowPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/agentic-ai/onto#WorkflowPattern> <http://www.w3.org/2000/01/rdf-schema#comment> "A reusable and structured template that defines a sequence or logic of tasks and interactions within an agentic workflow." .
+<http://www.w3id.org/agentic-ai/onto#WorkflowPattern> <http://www.w3.org/2000/01/rdf-schema#label> "Workflow Pattern" .
+# 
+# http://www.w3id.org/agentic-ai/onto#WorkflowStep
+<http://www.w3id.org/agentic-ai/onto#WorkflowStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/agentic-ai/onto#WorkflowStep> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual action or phase within a workflow pattern that contributes to task execution or goal achievement." .
+<http://www.w3id.org/agentic-ai/onto#WorkflowStep> <http://www.w3.org/2000/01/rdf-schema#label> "Workflow Step" .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
